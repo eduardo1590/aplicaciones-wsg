@@ -67,34 +67,81 @@
         </nav>
     </header>
 
+    <section class="hero is-warning">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              WEB SERVICES GROUP 222
+            </h1>
+          </div>
+        </div>
+      </section>
+
     <section id="busqueda">
-        <h1>Buscar</h1>
-         <button class="button is-info">
-             Boton
-         </button>   
+        <div class="container">
+            <label class="label is-large">Criterio de Busqueda</label>
+              <div class="field has-addons">
+                <div class="control is-expanded">
+                  <div class="select is-fullwidth">
+                    <select name="criteria">
+                      <option value="reference">Codigo Corto</option>
+                      <option value="code">Codigo Largo</option>
+                      <option value="model">Modelo de Carro</option>
+                      <option value="brand">Marca de Carro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control">
+                  <button type="submit" class="button is-info">Buscar</button>
+                </div>
+              </div>   
+        </div>
     </section>
 
-    <section id="resultados">
-        <table>
-
+    <section id="resultados" class="resultados">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>Motor</th>
+                <th>Codigo</th>
+                <th>Codigo Corto</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
     </section>
 
-    <section id="contacto">
-
-    </section>
-    
     <footer>
-        <div class="columns is-mobile">
-            <div class="column is-half is-offset-one-quarter">
-                <img src="./img/LOGOWSG222.png" alt="logo" width="300px">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <strong>Contactanos</strong>  
+                    <p>Baruta, Caracas</p>
+                    <p>+584149167117</p> 
+                    <p>ventas.webservicesgroup@gmail.com</p>
+                    <p>lunes a viernes 8:00 am 5:00 pm</p>
+                </div>
+                <div class="column is-half">
+                    <img src="./img/LOGOWSG222.png" alt="logo" width="300px">
+                </div>
             </div>
+            <div class="columns">
+                
+            </div>
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter-desktop is-offset-one-quarter-tablet">
+                    <p>Copyright © WSG222 - All rights reserved, Web Services Group 222 C.A.</p>
+                </div>
+            </div>   
         </div>
-        <div class="columns">
-            <div class="column is-half is-offset-one-quarter-desktop is-offset-one-quarter-tablet">
-                <p>Copyright © WSG222 - All rights reserved, Web Services Group 222 C.A.</p>
-            </div>
-        </div>   
     </footer>
 
     <script src="main.js"></script>
